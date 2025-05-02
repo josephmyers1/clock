@@ -75,7 +75,7 @@ char Message[] =
      SPACE,SPACE,SPACE,SPACE,SPACE,SPACE,SPACE,SPACE,SPACE,SPACE};
 
 /* Declare array for Song */
-Music Song[100];
+Music Song[102];
 
 /* Variables for RTC set/edit */
 char currentState     = 0;   // 0=clock,1=calendar,2=alarm1,3=alarm2
@@ -183,6 +183,124 @@ int main(void)
   TIM7->DIER |=  1;
   TIM7->CR1  |=  1;
 
+  int noteCount = 0;
+  void initNote(int currentNote, int tone, int length, int tempo, int space, int end){
+    Song[currentNote].note = tone;
+    Song[currentNote].size = length;
+    Song[currentNote].tempo = tempo;
+    Song[currentNote].space = space;
+    Song[currentNote].end =end;
+    if(end != 1) noteCount++;
+    return;
+  }
+
+  /* Alarm song - Reveille */
+ initNote(1,G4,_8th,159,10,0);
+ initNote(2,Cs5_Db5,_8th,159,10,0);
+ initNote(3,F5,_16th,159,10,0);
+ initNote(4,Cs5_Db5,_16th,159,10,0);
+ initNote(5,G4,_8th,159,10,0);
+ initNote(6,F5,_8th,159,10,0);
+ initNote(7,Cs5_Db5,_8th,159,10,0);
+ initNote(8,F5,_16th,159,10,0);
+ initNote(9,Cs5_Db5,_16th,159,10,0);
+ initNote(10,G4,_8th,159,10,0);
+ initNote(11,F5,_8th,159,10,0);
+ initNote(12,Cs5_Db5,_8th,159,10,0);
+ initNote(13,F5,_16th,159,10,0);
+ initNote(14,D5,_16th,159,10,0);
+ initNote(15,G4,_8th,159,10,0);
+ initNote(16,Cs5_Db5,_8th,159,10,0);
+ initNote(17,F5,quarter,159,10,0);
+ initNote(18,Cs5_Db5,_8th,159,10,0);
+ initNote(19,G4,_8th,159,10,0);
+ initNote(20,Cs5_Db5,_8th,159,10,0);
+ initNote(21,F5,_16th,159,10,0);
+ initNote(22,Cs5_Db5,_16th,159,10,0);
+ initNote(23,G4,_8th,159,10,0);
+ initNote(24,F5,_8th,159,10,0);
+ initNote(25,Cs5_Db5,_8th,159,10,0);
+ initNote(26,F5,_16th,159,10,0);
+ initNote(27,Cs5_Db5,_16th,159,10,0);
+ initNote(28,G4,_8th,159,10,0);
+ initNote(29,F5,_8th,159,10,0);
+ initNote(30,Cs5_Db5,_8th,159,10,0);
+ initNote(31,F5,_16th,159,10,0);
+ initNote(32,Cs5_Db5,_16th,159,10,0);
+ initNote(33,G4,_8th,159,10,0);
+ initNote(34,G4,_8th,159,10,0);
+ initNote(35,Cs5_Db5,quarter,159,10,0);
+ initNote(36,F5,_8th,159,10,0);
+ initNote(37,F5,_8th,159,10,0);
+ initNote(38,F5,_8th,159,10,0);
+ initNote(39,F5,_8th,159,10,0);
+ initNote(40,F5,_8th,159,10,0);
+ initNote(41,F5,_8th,159,10,0);
+ initNote(42,G5,quarter,159,10,0);
+ initNote(43,F5,_8th,159,10,0);
+ initNote(44,Cs5_Db5,_8th,159,10,0);
+ initNote(45,F5,_8th,159,10,0);
+ initNote(46,Cs5_Db5,_8th,159,10,0);
+ initNote(47,F5,_8th,159,10,0);
+ initNote(48,Cs5_Db5,_8th,159,10,0);
+ initNote(49,F5,quarter,159,10,0);
+ initNote(50,Cs5_Db5,_8th,159,10,0);
+ initNote(51,F5,_8th,159,10,0);
+ initNote(52,F5,_8th,159,10,0);
+ initNote(53,F5,_8th,159,10,0);
+ initNote(54,F5,_8th,159,10,0);
+ initNote(55,F5,_8th,159,10,0);
+ initNote(56,G5,quarter,159,10,0);
+ initNote(57,F5,_8th,159,10,0);
+ initNote(58,Cs5_Db5,_8th,159,10,0);
+ initNote(59,F5,_8th,159,10,0);
+ initNote(60,Cs5_Db5,_8th,159,10,0);
+ initNote(61,G4,_8th,159,10,0);
+ initNote(62,G4,_8th,159,10,0);
+ initNote(63,Cs5_Db5,quarter,159,10,0);
+ initNote(64,G4,_8th,159,10,0);
+ initNote(65,Cs5_Db5,_8th,159,10,0);
+ initNote(66,F5,_16th,159,10,0);
+ initNote(67,Cs5_Db5,_16th,159,10,0);
+ initNote(68,G4,_8th,159,10,0);
+ initNote(69,F5,_8th,159,10,0);
+ initNote(70,Cs5_Db5,_8th,159,10,0);
+ initNote(71,F5,_16th,159,10,0);
+ initNote(72,Cs5_Db5,_16th,159,10,0);
+ initNote(73,G4,_8th,159,10,0);
+ initNote(74,F5,_8th,159,10,0);
+ initNote(75,Cs5_Db5,_8th,159,10,0);
+ initNote(76,F5,_16th,159,10,0);
+ initNote(77,Cs5_Db5,_8th,159,10,0);
+ initNote(78,G4,_8th,159,10,0);
+ initNote(79,Cs5_Db5,_8th,159,10,0);
+ initNote(80,F5,quarter,159,10,0);
+ initNote(81,Cs5_Db5,_8th,159,10,0);
+ initNote(82,G4,_8th,159,10,0);
+ initNote(83,Cs5_Db5,_8th,159,10,0);
+ initNote(84,F5,_16th,159,10,0);
+ initNote(85,Cs5_Db5,_16th,159,10,0);
+ initNote(86,G4,_8th,159,10,0);
+ initNote(87,F5,_8th,159,10,0);
+ initNote(88,Cs5_Db5,_8th,159,10,0);
+ initNote(89,F5,_16th,159,10,0);
+ initNote(90,Cs5_Db5,_16th,159,10,0);
+ initNote(91,G4,_8th,159,10,0);
+ initNote(92,F5,_8th,159,10,0);
+ initNote(93,Cs5_Db5,_8th,159,10,0);
+ initNote(94,F5,_16th,159,10,0);
+ initNote(95,Cs5_Db5,_8th,159,10,0);
+ initNote(96,G4,_8th,159,10,0);
+ initNote(97,G4,_8th,159,10,0);
+ initNote(98,Cs5_Db5,quarter,159,10,0);
+ initNote(99,rest,_8th,159,10,0);
+ initNote(100,rest,quarter,159,10,0);
+ initNote(101,rest,quarter,159,10,1);
+
+
+  Save_Note = Song[0].note;  // Needed for vibrato effect
+  INDEX = 0;
+  Music_ON = 0;
   // enable Alarm A & B in the RTC
   RTC->CR |= RTC_CR_ALRAIE | RTC_CR_ALRAE    // Alarm A interrupt + enable
            | RTC_CR_ALRBIE | RTC_CR_ALRBE;  // Alarm B interrupt + enable
@@ -288,15 +406,19 @@ int main(void)
         RTC->ISR &= ~RTC_ISR_INIT;
         RTC->WPR = 0xFF;
       }
-      else if (currentState==2) {       // —– commit Alarm 1 —–
+      else if (currentState==2) {       // —– commit Alarm 1/A —–
         /* unlock RTC write */
         RTC->WPR = 0xCA;
         RTC->WPR = 0x53;
         /* enter init mode */
         RTC->ISR |=  RTC_ISR_INIT;
         while(!(RTC->ISR & RTC_ISR_INITF));
+
+
         /* program Alarm A register: HH:MM:SS */
-        RTC->ALRMAR =
+        RTC->ALRMAR =0;
+        RTC->ALRMASSR = 0;
+        RTC->ALRMAR=
             (alarm1H/10)<<20
 			| (alarm1H%10)<<16
 			| (alarm1M/10)<<12
@@ -305,22 +427,27 @@ int main(void)
 			| (alarm1S%10)
         	| (1U << 31); // mask date field
 
-        /* leave init mode */
-        RTC->ISR &= ~RTC_ISR_INIT;
-        RTC->WPR = 0xFF;
+
 
         // arm or disarm Alarm A based on switch
-        if (GPIOC->IDR & (1U << 15)) {
+        if (GPIOC->IDR & (1 << 15)) {
         	RTC->CR |= (RTC_CR_ALRAIE | RTC_CR_ALRAE);
         } else {
         	RTC->CR &= ~(RTC_CR_ALRAIE | RTC_CR_ALRAE);
         }
+
+        /* leave init mode */
+        RTC->ISR &= ~RTC_ISR_INIT;
+        RTC->WPR = 0xFF;
+
       }
       else if (currentState==3) {       // —– commit Alarm 2 —–
         RTC->WPR = 0xCA;
         RTC->WPR = 0x53;
-        RTC->ISR |=  RTC_ISR_INIT;
+        RTC->ISR |= RTC_ISR_INIT;
         while(!(RTC->ISR & RTC_ISR_INITF));
+
+
         RTC->ALRMBR =
             (alarm2H/10)<<20
 			| (alarm2H%10)<<16
@@ -330,15 +457,15 @@ int main(void)
 			| (alarm2S%10)
         	| (1U << 31); // mask date
 
-        RTC->ISR &= ~RTC_ISR_INIT;
-        RTC->WPR = 0xFF;
-
         // arm or disarm Alarm B based on switch
-        if (GPIOC->IDR & (1U << 14)) {
+        if (GPIOC->IDR & (1 << 14)) {
         	RTC->CR |= (RTC_CR_ALRBIE | RTC_CR_ALRBE);
         } else {
         	RTC->CR &= ~(RTC_CR_ALRBIE | RTC_CR_ALRBE);
         }
+
+        RTC->ISR &= ~RTC_ISR_INIT;
+        RTC->WPR = 0xFF;
       }
 
       updateValueFlag = 0;
@@ -401,20 +528,20 @@ int main(void)
           break;
       }
       case 1: {
-        // Calendar YY.MM.DD -- PD0 lit
+        // Calendar DD.MM.YY -- PD0 lit
         if(editMode && ((HAL_GetTick()/500)&1)==0) {
           for(int d=0; d<8; d++) Seven_Segment_Digit(d, BL, 0);
         } else {
           char t,o;
           t = yearSet/10;   o = yearSet%10;
-          Seven_Segment_Digit(7, t, 0);
-		  Seven_Segment_Digit(6, o, 1);
+          Seven_Segment_Digit(3, t, 0);
+		  Seven_Segment_Digit(2, o, 0);
           t = monthSet/10;  o = monthSet%10;
           Seven_Segment_Digit(5, t, 0);
           Seven_Segment_Digit(4, o, 1);
           t = daySet/10;    o = daySet%10;
-          Seven_Segment_Digit(3, t, 0);
-          Seven_Segment_Digit(2, o, 0);
+          Seven_Segment_Digit(7, t, 0);
+          Seven_Segment_Digit(6, o, 1);
           Seven_Segment_Digit(1, BL, 0);
           Seven_Segment_Digit(0, BL, 0);
         }
@@ -426,6 +553,7 @@ int main(void)
           for(int d=0; d<8; d++) Seven_Segment_Digit(d, BL, 0);
         } else {
           char t,o;
+
           t = alarm1H/10;    o = alarm1H%10;
           Seven_Segment_Digit(7, t, 0);
           Seven_Segment_Digit(6, o, 1);
@@ -436,7 +564,7 @@ int main(void)
           Seven_Segment_Digit(3, t, 0);
           Seven_Segment_Digit(2, o, 0);
           Seven_Segment_Digit(1, BL, 0);
-          Seven_Segment_Digit(0, BL, 0);
+          Seven_Segment_Digit(0, 0xa, 0);
         }
         break;
       }
@@ -456,7 +584,7 @@ int main(void)
           Seven_Segment_Digit(3, t, 0);
           Seven_Segment_Digit(2, o, 0);
           Seven_Segment_Digit(1, BL, 0);
-          Seven_Segment_Digit(0, BL, 0);
+          Seven_Segment_Digit(0, 0xb, 0);
         }
         break;
       }
