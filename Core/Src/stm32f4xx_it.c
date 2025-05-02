@@ -187,6 +187,27 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
  /* RTC Alarm Logic */
+	if(Music_ON){
+			uint32_t tr = RTC->TR;
+		    int hr_t = (tr >> 20) & 0x3;
+		    int hr_u = (tr >> 16) & 0xF;
+		    int mn_t = (tr >> 12) & 0x7;
+			int mn_u = (tr >>  8) & 0xF;
+			int sc_t = (tr >>  4) & 0x7;
+			int sc_u = (tr >>  0) & 0xF;
+
+			      Seven_Segment_Digit(7, hr_t, 0);
+			      Seven_Segment_Digit(6, hr_u, 1);
+			  	  Seven_Segment_Digit(5, mn_t, 0);
+			  	  Seven_Segment_Digit(4, mn_u, 1);
+			  	  Seven_Segment_Digit(3, sc_t, 0);
+			  	  Seven_Segment_Digit(2, sc_u, 0);
+			            // unused
+			  	  Seven_Segment_Digit(1, 46, 0);
+			  	  Seven_Segment_Digit(0, 46, 0);
+		}
+
+
 
 
 COUNT++;  // Increment note duration counter
@@ -222,6 +243,7 @@ if (Animate_On > 0)
 		if ((Message_Pointer - Save_Pointer) >= (Message_Length-8)) Message_Pointer = Save_Pointer;
 
 	}
+
 }
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
@@ -242,25 +264,41 @@ if (Animate_On > 0)
   */
 void RTC_Alarm_IRQHandler(void)
 {
-	// check Alarm A:
-	if (RTC->ISR & RTC_ISR_ALRAF) {
+
+  /* USER CODE BEGIN RTC_Alarm_IRQn 0 */
+	if ((RTC->ISR & 0x1 << 8)) {
 		//clear Alarm A flag in RTC
 		RTC->ISR &= ~RTC_ISR_ALRAF;
-		// clear EXTI line 17 pending bit
-		EXTI->PR = (1u << 17);
-		//toggle PD12 so can see alarm fire
-		GPIOD->ODR ^= (1u <<12);
-	}
 
-	//check Alarm B;
-	if (RTC->ISR & RTC_ISR_ALRBF) {
-		// clear Alarm B flag in RTC
-		RTC->ISR &= ~RTC_ISR_ALRBF;
-		// clear the EXTI line 18 pending bit
-		EXTI->PR = (1u<<18);
-		// toggle PD13 so can see alarm fire
-		GPIOD->ODR ^= (1u << 13);
+		HAL_RTC_AlarmAEventCallback(&hrtc);
+
+		//EXTI->PR = (1u << 18);
+		    // clear EXTI line 17 pending bit
+
+		    //toggle PD12 so can see alarm fire
+		    //GPIOD->ODR ^= (1u <<12);
 	}
+			  //check Alarm B; //RTC->ISR &
+	if ((RTC->ISR & 0x1 << 9)) {
+		    // clear Alarm B flag in RTC
+		RTC->ISR &= ~RTC_ISR_ALRBF;
+
+		HAL_RTCEx_AlarmBEventCallback(&hrtc);
+
+
+
+		    // clear the EXTI line 18 pending bit
+
+		    // toggle PD13 so can see alarm fire
+		    //GPIOD->ODR ^= (1u << 13);
+	    }
+	/* USER CODE END RTC_Alarm_IRQn 0 */
+	   // HAL_RTC_AlarmIRQHandler(&hrtc);
+	/* USER CODE BEGIN RTC_Alarm_IRQn 1 */
+
+
+
+
   /* USER CODE END RTC_Alarm_IRQn 1 */
 }
 
@@ -303,6 +341,7 @@ void TIM7_IRQHandler(void)
 			  	  	  Save_Note = Song[0].note;  // Needed for vibrato effect
 			  	  	  INDEX = 0;
 			  	  	  Music_ON = 0;
+			  	  	  EXTI->PR = (1u<<17);
 				}
 	}
 	else if (Music_ON == 0)

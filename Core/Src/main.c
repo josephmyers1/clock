@@ -195,108 +195,108 @@ int main(void)
   }
 
   /* Alarm song - Reveille */
- initNote(1,G4,_8th,159,10,0);
- initNote(2,Cs5_Db5,_8th,159,10,0);
- initNote(3,F5,_16th,159,10,0);
- initNote(4,Cs5_Db5,_16th,159,10,0);
- initNote(5,G4,_8th,159,10,0);
- initNote(6,F5,_8th,159,10,0);
- initNote(7,Cs5_Db5,_8th,159,10,0);
- initNote(8,F5,_16th,159,10,0);
- initNote(9,Cs5_Db5,_16th,159,10,0);
- initNote(10,G4,_8th,159,10,0);
- initNote(11,F5,_8th,159,10,0);
- initNote(12,Cs5_Db5,_8th,159,10,0);
- initNote(13,F5,_16th,159,10,0);
- initNote(14,D5,_16th,159,10,0);
- initNote(15,G4,_8th,159,10,0);
- initNote(16,Cs5_Db5,_8th,159,10,0);
- initNote(17,F5,quarter,159,10,0);
- initNote(18,Cs5_Db5,_8th,159,10,0);
- initNote(19,G4,_8th,159,10,0);
- initNote(20,Cs5_Db5,_8th,159,10,0);
- initNote(21,F5,_16th,159,10,0);
- initNote(22,Cs5_Db5,_16th,159,10,0);
- initNote(23,G4,_8th,159,10,0);
- initNote(24,F5,_8th,159,10,0);
- initNote(25,Cs5_Db5,_8th,159,10,0);
- initNote(26,F5,_16th,159,10,0);
- initNote(27,Cs5_Db5,_16th,159,10,0);
- initNote(28,G4,_8th,159,10,0);
- initNote(29,F5,_8th,159,10,0);
- initNote(30,Cs5_Db5,_8th,159,10,0);
- initNote(31,F5,_16th,159,10,0);
- initNote(32,Cs5_Db5,_16th,159,10,0);
- initNote(33,G4,_8th,159,10,0);
- initNote(34,G4,_8th,159,10,0);
- initNote(35,Cs5_Db5,quarter,159,10,0);
- initNote(36,F5,_8th,159,10,0);
- initNote(37,F5,_8th,159,10,0);
- initNote(38,F5,_8th,159,10,0);
- initNote(39,F5,_8th,159,10,0);
- initNote(40,F5,_8th,159,10,0);
- initNote(41,F5,_8th,159,10,0);
- initNote(42,G5,quarter,159,10,0);
- initNote(43,F5,_8th,159,10,0);
- initNote(44,Cs5_Db5,_8th,159,10,0);
- initNote(45,F5,_8th,159,10,0);
- initNote(46,Cs5_Db5,_8th,159,10,0);
- initNote(47,F5,_8th,159,10,0);
- initNote(48,Cs5_Db5,_8th,159,10,0);
- initNote(49,F5,quarter,159,10,0);
- initNote(50,Cs5_Db5,_8th,159,10,0);
- initNote(51,F5,_8th,159,10,0);
- initNote(52,F5,_8th,159,10,0);
- initNote(53,F5,_8th,159,10,0);
- initNote(54,F5,_8th,159,10,0);
- initNote(55,F5,_8th,159,10,0);
- initNote(56,G5,quarter,159,10,0);
- initNote(57,F5,_8th,159,10,0);
- initNote(58,Cs5_Db5,_8th,159,10,0);
- initNote(59,F5,_8th,159,10,0);
- initNote(60,Cs5_Db5,_8th,159,10,0);
- initNote(61,G4,_8th,159,10,0);
- initNote(62,G4,_8th,159,10,0);
- initNote(63,Cs5_Db5,quarter,159,10,0);
- initNote(64,G4,_8th,159,10,0);
- initNote(65,Cs5_Db5,_8th,159,10,0);
- initNote(66,F5,_16th,159,10,0);
- initNote(67,Cs5_Db5,_16th,159,10,0);
- initNote(68,G4,_8th,159,10,0);
- initNote(69,F5,_8th,159,10,0);
- initNote(70,Cs5_Db5,_8th,159,10,0);
- initNote(71,F5,_16th,159,10,0);
- initNote(72,Cs5_Db5,_16th,159,10,0);
- initNote(73,G4,_8th,159,10,0);
- initNote(74,F5,_8th,159,10,0);
- initNote(75,Cs5_Db5,_8th,159,10,0);
- initNote(76,F5,_16th,159,10,0);
- initNote(77,Cs5_Db5,_8th,159,10,0);
- initNote(78,G4,_8th,159,10,0);
- initNote(79,Cs5_Db5,_8th,159,10,0);
- initNote(80,F5,quarter,159,10,0);
- initNote(81,Cs5_Db5,_8th,159,10,0);
- initNote(82,G4,_8th,159,10,0);
- initNote(83,Cs5_Db5,_8th,159,10,0);
- initNote(84,F5,_16th,159,10,0);
- initNote(85,Cs5_Db5,_16th,159,10,0);
- initNote(86,G4,_8th,159,10,0);
- initNote(87,F5,_8th,159,10,0);
- initNote(88,Cs5_Db5,_8th,159,10,0);
- initNote(89,F5,_16th,159,10,0);
- initNote(90,Cs5_Db5,_16th,159,10,0);
- initNote(91,G4,_8th,159,10,0);
- initNote(92,F5,_8th,159,10,0);
- initNote(93,Cs5_Db5,_8th,159,10,0);
- initNote(94,F5,_16th,159,10,0);
- initNote(95,Cs5_Db5,_8th,159,10,0);
- initNote(96,G4,_8th,159,10,0);
- initNote(97,G4,_8th,159,10,0);
- initNote(98,Cs5_Db5,quarter,159,10,0);
- initNote(99,rest,_8th,159,10,0);
- initNote(100,rest,quarter,159,10,0);
- initNote(101,rest,quarter,159,10,1);
-
+ initNote(0,rest,_8th,1300,10,0);
+ initNote(1,G4,_8th,1300,10,0);
+ initNote(2,Cs5_Db5,_8th,1300,10,0);
+ initNote(3,F5,_16th,1300,10,0);
+ initNote(4,Cs5_Db5,_16th,1300,10,0);
+ initNote(5,G4,_8th,1300,10,0);
+ initNote(6,F5,_8th,1300,10,0);
+ initNote(7,Cs5_Db5,_8th,1300,10,0);
+ initNote(8,F5,_16th,1300,10,0);
+ initNote(9,Cs5_Db5,_16th,1300,10,0);
+ initNote(10,G4,_8th,1300,10,0);
+ initNote(11,F5,_8th,1300,10,0);
+ initNote(12,Cs5_Db5,_8th,1300,10,0);
+ initNote(13,F5,_16th,1300,10,0);
+ initNote(14,D5,_16th,1300,10,0);
+ initNote(15,G4,_8th,1300,10,0);
+ initNote(16,Cs5_Db5,_8th,1300,10,0);
+ initNote(17,F5,quarter,1300,10,0);
+ initNote(18,Cs5_Db5,_8th,1300,10,0);
+ initNote(19,G4,_8th,1300,10,0);
+ initNote(20,Cs5_Db5,_8th,1300,10,0);
+ initNote(21,F5,_16th,1300,10,0);
+ initNote(22,Cs5_Db5,_16th,1300,10,0);
+ initNote(23,G4,_8th,1300,10,0);
+ initNote(24,F5,_8th,1300,10,0);
+ initNote(25,Cs5_Db5,_8th,1300,10,0);
+ initNote(26,F5,_16th,1300,10,0);
+ initNote(27,Cs5_Db5,_16th,1300,10,0);
+ initNote(28,G4,_8th,1300,10,0);
+ initNote(29,F5,_8th,1300,10,0);
+ initNote(30,Cs5_Db5,_8th,1300,10,0);
+ initNote(31,F5,_16th,1300,10,0);
+ initNote(32,Cs5_Db5,_16th,1300,10,0);
+ initNote(33,G4,_8th,1300,10,0);
+ initNote(34,G4,_8th,1300,10,0);
+ initNote(35,Cs5_Db5,quarter,1300,10,0);
+ initNote(36,F5,_8th,1300,10,0);
+ initNote(37,F5,_8th,1300,10,0);
+ initNote(38,F5,_8th,1300,10,0);
+ initNote(39,F5,_8th,1300,10,0);
+ initNote(40,F5,_8th,1300,10,0);
+ initNote(41,F5,_8th,1300,10,0);
+ initNote(42,G5,quarter,1300,10,0);
+ initNote(43,F5,_8th,1300,10,0);
+ initNote(44,Cs5_Db5,_8th,1300,10,0);
+ initNote(45,F5,_8th,1300,10,0);
+ initNote(46,Cs5_Db5,_8th,1300,10,0);
+ initNote(47,F5,_8th,1300,10,0);
+ initNote(48,Cs5_Db5,_8th,1300,10,0);
+ initNote(49,F5,quarter,1300,10,0);
+ initNote(50,Cs5_Db5,_8th,1300,10,0);
+ initNote(51,F5,_8th,1300,10,0);
+ initNote(52,F5,_8th,1300,10,0);
+ initNote(53,F5,_8th,1300,10,0);
+ initNote(54,F5,_8th,1300,10,0);
+ initNote(55,F5,_8th,1300,10,0);
+ initNote(56,G5,quarter,1300,10,0);
+ initNote(57,F5,_8th,1300,10,0);
+ initNote(58,Cs5_Db5,_8th,1300,10,0);
+ initNote(59,F5,_8th,1300,10,0);
+ initNote(60,Cs5_Db5,_8th,1300,10,0);
+ initNote(61,G4,_8th,1300,10,0);
+ initNote(62,G4,_8th,1300,10,0);
+ initNote(63,Cs5_Db5,quarter,1300,10,0);
+ initNote(64,G4,_8th,1300,10,0);
+ initNote(65,Cs5_Db5,_8th,1300,10,0);
+ initNote(66,F5,_16th,1300,10,0);
+ initNote(67,Cs5_Db5,_16th,1300,10,0);
+ initNote(68,G4,_8th,1300,10,0);
+ initNote(69,F5,_8th,1300,10,0);
+ initNote(70,Cs5_Db5,_8th,1300,10,0);
+ initNote(71,F5,_16th,1300,10,0);
+ initNote(72,Cs5_Db5,_16th,1300,10,0);
+ initNote(73,G4,_8th,1300,10,0);
+ initNote(74,F5,_8th,1300,10,0);
+ initNote(75,Cs5_Db5,_8th,1300,10,0);
+ initNote(76,F5,_16th,1300,10,0);
+ initNote(77,Cs5_Db5,_8th,1300,10,0);
+ initNote(78,G4,_8th,1300,10,0);
+ initNote(79,Cs5_Db5,_8th,1300,10,0);
+ initNote(80,F5,quarter,1300,10,0);
+ initNote(81,Cs5_Db5,_8th,1300,10,0);
+ initNote(82,G4,_8th,1300,10,0);
+ initNote(83,Cs5_Db5,_8th,1300,10,0);
+ initNote(84,F5,_16th,1300,10,0);
+ initNote(85,Cs5_Db5,_16th,1300,10,0);
+ initNote(86,G4,_8th,1300,10,0);
+ initNote(87,F5,_8th,1300,10,0);
+ initNote(88,Cs5_Db5,_8th,1300,10,0);
+ initNote(89,F5,_16th,1300,10,0);
+ initNote(90,Cs5_Db5,_16th,1300,10,0);
+ initNote(91,G4,_8th,1300,10,0);
+ initNote(92,F5,_8th,1300,10,0);
+ initNote(93,Cs5_Db5,_8th,1300,10,0);
+ initNote(94,F5,_16th,1300,10,0);
+ initNote(95,Cs5_Db5,_8th,1300,10,0);
+ initNote(96,G4,_8th,1300,10,0);
+ initNote(97,G4,_8th,1300,10,0);
+ initNote(98,Cs5_Db5,quarter,1300,10,0);
+ initNote(99,rest,_8th,1300,10,0);
+ initNote(100,rest,quarter,1300,10,0);
+ initNote(101,rest,quarter,1300,10,1);
 
   Save_Note = Song[0].note;  // Needed for vibrato effect
   INDEX = 0;
@@ -311,10 +311,12 @@ int main(void)
   // 1) unmask the wake-up lines for Alarm A (EXTI 17) and Alarm B (EXTI 18)
   EXTI->IMR  |= (1<<17) | (1<<18);
   EXTI->RTSR |= (1<<17) | (1<<18);
-
+  EXTI->FTSR &= ~((1<<17)|(1<<18));
+  //EXTI-> = 0;
   // 2) turn on the RTC_Alarm_IRQn in the NVIC
   HAL_NVIC_SetPriority(RTC_Alarm_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(RTC_Alarm_IRQn);
+
 
   /* USER CODE END 2 */
 
@@ -407,17 +409,15 @@ int main(void)
         RTC->WPR = 0xFF;
       }
       else if (currentState==2) {       // —– commit Alarm 1/A —–
-        /* unlock RTC write */
+        //unlock RTC write
         RTC->WPR = 0xCA;
         RTC->WPR = 0x53;
-        /* enter init mode */
+        RTC->CR &= ~(RTC_CR_ALRAIE | RTC_CR_ALRAE);
         RTC->ISR |=  RTC_ISR_INIT;
         while(!(RTC->ISR & RTC_ISR_INITF));
 
-
-        /* program Alarm A register: HH:MM:SS */
-        RTC->ALRMAR =0;
-        RTC->ALRMASSR = 0;
+        // program Alarm A register: HH:MM:SS
+        RTC->ALRMAR = 0;
         RTC->ALRMAR=
             (alarm1H/10)<<20
 			| (alarm1H%10)<<16
@@ -436,18 +436,47 @@ int main(void)
         	RTC->CR &= ~(RTC_CR_ALRAIE | RTC_CR_ALRAE);
         }
 
-        /* leave init mode */
+        // leave init mode
         RTC->ISR &= ~RTC_ISR_INIT;
         RTC->WPR = 0xFF;
 
+
+
+//    	  //Trial 2
+//    	  RTC->WPR = 0xCA;
+//    	  RTC->WPR = 0x53;
+//    	  RTC->CR &= ~(RTC_CR_ALRAIE | RTC_CR_ALRAE);// disable alarm
+//    	  RTC->ISR |= RTC_ISR_INIT;
+//    	  while(!(RTC->ISR & RTC_ISR_INITF));
+//
+//    	  RTC->ALRMAR = 0;
+//    	  RTC->ALRMAR =
+//    		  (alarm1H/10)<<20
+//			  | (alarm1H%10)<<16
+//              | (alarm1M/10)<<12
+//			  | (alarm1M%10)<< 8
+//    	      | (alarm1S/10)<< 4
+//			  | (alarm1S%10)
+//    	      | (1U << 31); // mask date
+//
+//    	      // arm or disarm Alarm B based on switch
+//    	      if (GPIOC->IDR & (1 << 14)) {
+//    	         RTC->CR |= (RTC_CR_ALRAIE | RTC_CR_ALRAE);
+//    	      } else {
+//    	         RTC->CR &= ~(RTC_CR_ALRAIE | RTC_CR_ALRAE);
+//    	      }
+//
+//    	      RTC->ISR &= ~RTC_ISR_INIT;
+//    	      RTC->WPR = 0xFF;
       }
       else if (currentState==3) {       // —– commit Alarm 2 —–
         RTC->WPR = 0xCA;
         RTC->WPR = 0x53;
+        RTC->CR &= ~(RTC_CR_ALRBIE | RTC_CR_ALRBE);// disable alarm
         RTC->ISR |= RTC_ISR_INIT;
         while(!(RTC->ISR & RTC_ISR_INITF));
 
-
+        RTC->ALRMBR = 0;
         RTC->ALRMBR =
             (alarm2H/10)<<20
 			| (alarm2H%10)<<16
@@ -507,23 +536,24 @@ int main(void)
             }
           } else {
             // normal running clock: pull from RTC->TR so it auto-increments
-            uint32_t tr = RTC->TR;
-            int hr_t = (tr >> 20) & 0x3;
-            int hr_u = (tr >> 16) & 0xF;
-            int mn_t = (tr >> 12) & 0x7;
-            int mn_u = (tr >>  8) & 0xF;
-            int sc_t = (tr >>  4) & 0x7;
-            int sc_u = (tr >>  0) & 0xF;
+        	  uint32_t tr = RTC->TR;
+        	  int hr_t = (tr >> 20) & 0x3;
+        	  int hr_u = (tr >> 16) & 0xF;
+        	  int mn_t = (tr >> 12) & 0x7;
+        	  int mn_u = (tr >>  8) & 0xF;
+        	  int sc_t = (tr >>  4) & 0x7;
+        	  int sc_u = (tr >>  0) & 0xF;
 
-            Seven_Segment_Digit(7, hr_t, 0);
-            Seven_Segment_Digit(6, hr_u, 1);
-            Seven_Segment_Digit(5, mn_t, 0);
-            Seven_Segment_Digit(4, mn_u, 1);
-            Seven_Segment_Digit(3, sc_t, 0);
-            Seven_Segment_Digit(2, sc_u, 0);
-            // unused
-            Seven_Segment_Digit(1, BL, 0);
-            Seven_Segment_Digit(0, BL, 0);
+        	  Seven_Segment_Digit(7, hr_t, 0);
+        	  Seven_Segment_Digit(6, hr_u, 1);
+        	  Seven_Segment_Digit(5, mn_t, 0);
+        	  Seven_Segment_Digit(4, mn_u, 1);
+        	  Seven_Segment_Digit(3, sc_t, 0);
+        	  Seven_Segment_Digit(2, sc_u, 0);
+        	  	            // unused
+        	  Seven_Segment_Digit(1, BL, 0);
+        	  Seven_Segment_Digit(0, BL, 0);
+
           }
           break;
       }
@@ -554,13 +584,18 @@ int main(void)
         } else {
           char t,o;
 
+
+
           t = alarm1H/10;    o = alarm1H%10;
+          //t= (RTC->ALRMAR & 0xff<<20); 0= (RTC->ALRMAR & 0xff <<16);
           Seven_Segment_Digit(7, t, 0);
           Seven_Segment_Digit(6, o, 1);
           t = alarm1M/10;    o = alarm1M%10;
+          //t=(RTC->ALRMAR & 0xff <<12); o= RTC->ALRMAR & 0xff << 8;
           Seven_Segment_Digit(5, t, 0);
 		  Seven_Segment_Digit(4, o, 1);
           t = alarm1S/10;    o = alarm1S%10;
+          //t=(RTC->ALRMAR & 0xff <<4); o=(RTC->ALRMAR & 0xff);
           Seven_Segment_Digit(3, t, 0);
           Seven_Segment_Digit(2, o, 0);
           Seven_Segment_Digit(1, BL, 0);
@@ -575,12 +610,15 @@ int main(void)
         } else {
           char t,o;
           t = alarm2H/10;    o = alarm2H%10;
+          //t=(RTC->ALRMBR & 0xff<<20); 0=(RTC->ALRMBR & 0xff <<16);
           Seven_Segment_Digit(7, t, 0);
           Seven_Segment_Digit(6, o, 1);
           t = alarm2M/10;    o = alarm2M%10;
+          //t=(RTC->ALRMBR & 0xff <<12); o=(RTC->ALRMBR & 0xff << 8);
           Seven_Segment_Digit(5, t, 0);
           Seven_Segment_Digit(4, o, 1);
           t = alarm2S/10;    o = alarm2S%10;
+          //t=(RTC->ALRMBR & 0xff <<4); o=(RTC->ALRMBR & 0xff);
           Seven_Segment_Digit(3, t, 0);
           Seven_Segment_Digit(2, o, 0);
           Seven_Segment_Digit(1, BL, 0);
@@ -592,6 +630,10 @@ int main(void)
 
     /* optional: show currentState on LEDs for debug */
     GPIOD->ODR = (GPIOD->ODR & ~0x3) | (currentState & 0x3);
+
+    if(!Music_ON){
+    	GPIOD->ODR &= ~((1<<12) | (1<<13));
+    }
 
   } /* USER CODE END WHILE */
   /* USER CODE END 3 */
